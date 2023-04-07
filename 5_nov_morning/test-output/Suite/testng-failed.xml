@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="CromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="sauit.base_utility">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="validatecode"/>
+          <include name="validateteacher"/>
+          <include name="beforeclass"/>
+          <include name="aftertest"/>
+          <include name="validateprogres"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- sauit.base_utility -->
+    </classes>
+  </test> <!-- CromeTest(failed) -->
+  <test thread-count="5" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="sauit.base_utility">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="validatecode"/>
+          <include name="validateteacher"/>
+          <include name="beforeclass"/>
+          <include name="aftertest"/>
+          <include name="validateprogres"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- sauit.base_utility -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
